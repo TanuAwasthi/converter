@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CONVERTER</h1>
+        <table class="tab">
+            <form>
+                <tr>
+                    <td><label><b>From:</b></label></td>
+                    <td><label><b>To:</b></label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="from" >
+                    </td>
+                    <td>
+                        <input type="text" id="to" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select size="5"  id="calFrom" onclick="calc()">
+                            <option value="meter">Meter</option>
+                            <option value="cm">Centimeter</option>
+                            <option value="km">Kilometer</option>
+                            <option value="milli">Milimeter</option>
+                            <option value="macro">Macrometer</option>
+                            <option value="mile">Mile</option>
+                            <option value="yard">Yard</option>
+                            <option value="foot">Foot</option>
+                            <option value="inch">Inche</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select size="5" id="calTo" onclick="calc()" >
+                            <option value="meter">Meter</option>
+                            <option value="cm">Centimeter</option>
+                            <option value="km">Kilometer</option>
+                            <option value="milli">Milimeter</option>
+                            <option value="macro">Macrometer</option>
+                            <option value="mile">Mile</option>
+                            <option value="yard">Yard</option>
+                            <option value="foot">Foot</option>
+                            <option value="inch">Inch</option>
+                        </select>
+                    </td>
+                </tr>
+            </form>
+        </table>
+        <br>
+        <div id="res"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
